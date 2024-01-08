@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var dragOffset: CGSize = .zero
+    
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        VStack{
+            DragSwapView()
         }
-        .padding()
+        
     }
 }
 
